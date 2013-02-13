@@ -613,22 +613,14 @@
 		<match name="quicktime" expression="quicktime" />
 	</VideoCodec>
 	<AudioCodec>
-		<match name="dolbydigital" expression="a_ac3" />
-		<match name="dolbydigital" expression="ac-3" />
-		<match name="dolbydigital" expression="ac3" />
-		<match name="dts" expression="dca" />
-		<match name="dts" expression="dta" />
-		<match name="dtshd_ma" expression="dtsma" />
-		<match name="pcm" expression="pcm_bluray" />
-		<match name="pcm" expression="pcm_s16le" />
-		<match name="pcm" expression="pcm_u8" />
-		<match name="pcm" expression="adpcm_xa" />
-		<match name="pcm" expression="adpcm_ima_wav" />
-		<match name="wma" expression="wmav?2" />
-		<match name="wma" expression="wmav?3" />
-		<match name="wma" expression="wmapro" />
+		<match name="dolby_digital" expression="dolby.?digital" />
+		<match name="dolby_digital" expression="(a_)?ac-?3" />
+		<match name="dolby_pro" expression="dolby.?pro" />
+		<match name="dolby_truehd" expression="(dolby.?)?truehd" />
+		<match name="dts" expression="dca|dta" />
+		<match name="dtshd_ma" expression="dts.?ma" />
+		<match name="pcm" expression="pcm" />
+		<match name="wma" expression="wma" />
 		<match name="ogg" expression="vorbis" />
-		<match name="dolby_truehd" expression="dolbytruehd" />
-		<match name="dolby_truehd" expression="truehd" />
 	</AudioCodec>
 </MediaFlagSubstitutions>
