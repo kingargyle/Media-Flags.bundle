@@ -596,39 +596,21 @@
 		<match name="Zomba" expression="zomba" />
 	</Studio>
 	<VideoCodec>
-		<match name="divx" expression=".*divx.*" />
-		<match name="divx" expression=".*div2.*" />
-		<match name="divx" expression=".*div3.*" />
-		<match name="divx" expression=".*div4.*" />
-		<match name="divx" expression=".*div-4.*" />
-		<match name="divx" expression=".*divx 4.*" />
-		<match name="divx" expression=".*divx2.*" />
-		<match name="divx" expression=".*divx3.*" />
-		<match name="divx" expression=".*dx50.*" />
-		<match name="divx" expression=".*msmpeg4v1.*" />
-		<match name="divx" expression=".*msmpeg4v2.*" />
-		<match name="h264" expression=".*h264.*" />
-		<match name="h264" expression=".*h.264.*" />
-		<match name="h264" expression=".*x264.*" />
-		<match name="wmv" expression=".*wmv.*" />
-		<match name="wmv" expression=".*wmv1.*" />
-		<match name="wmv" expression=".*wmv2.*" />
-		<match name="wmvhd" expression=".*wmv3.*" />
-		<match name="wmvhd" expression=".*wmvhd.*" />
-		<match name="xvid" expression=".*xvid.*" />
-		<match name="xvid" expression=".*xvid2.*" />
-		<match name="mp4" expression=".*mp42.*" />
-		<match name="mp4" expression=".*mp43.*" />
-		<match name="mp4" expression=".*mp4.*" />
-		<match name="mp4" expression=".*mpg4.*" />
-		<match name="mkv" expression=".*mkv.*" />
-		<match name="mkv" expression=".*matroska.*" />
-		<match name="mpeg4" expression=".*msmpeg4.*" />
-		<match name="dvd" expression=".*mpeg2video.*" />
-		<match name="flv" expression=".*flv.*" />
-		<match name="mpeg" expression=".*mpeg.*" />
-		<match name="mpeg2" expression=".*mpeg2.*" />
-		<match name="quicktime" expression=".*quicktime.*" />
+		<match name="divx" expression="div|dx50" />
+		<match name="divx" expression="msmpeg4v(1|2|3)" />
+		<match name="mpeg4" expression="msmpeg4" />
+		<match name="h264" expression="avc1" />
+		<match name="h264" expression="(h|x)\.?264" />
+		<match name="wmv" expression="wmv(?!3|hd)" />
+		<match name="wmvhd" expression="wmv(3|hd)" />
+		<match name="xvid" expression="xvid" />
+		<match name="mp4" expression="mpg?4" />
+		<match name="mkv" expression="matroska|mkv" />
+		<match name="flv" expression="flv|vp6" />
+		<match name="mpeg" expression="mpeg(?!\d)" />
+		<match name="mpeg2" expression="mpeg2(?!video)" />
+		<match name="dvd" expression="mpeg2video" />
+		<match name="quicktime" expression="quicktime" />
 	</VideoCodec>
 	<AudioCodec>
 		<match name="dolbydigital" expression="a_ac3" />
