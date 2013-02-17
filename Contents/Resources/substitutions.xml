@@ -1,16 +1,14 @@
 <MediaFlagSubstitutions>
 	<Studio>
-		<match name="1492_Pictures" expression="1492" />
-		<match name="20th_Century_Fox" expression="20th century fox" />
+		<match name="1492_Pictures" expression="^1492" />
+		<match name="20th_Century_Fox" expression="(20th|twentieth) century fox" />
 		<match name="20th_Century_Fox" expression="fox 2000" />
 		<match name="20th_Century_Fox" expression="fox film corp" />
-		<match name="20th_Century_Fox" expression="twentieth century fox" />
-		<match name="2929" expression="2929" />
-		<match name="360_Pictures" expression="360" />
+		<match name="2929" expression="^2929" />
+		<match name="360_Pictures" expression="360 pictures" />
 		<match name="40_Acres" expression="40 acres" />
-		<match name="57 irving" expression="57 irving" />
-		<match name="777_Film_Corp" expression="777" />
-		<match name="aande" expression="aande" />
+		<match name="57_Irving" expression="57 irving" />
+		<match name="777_Film_Corp" expression="^777" />
 		<match name="Aardmann" expression="aardmann" />
 		<match name="abandon" expression="abandon" />
 		<match name="abc" expression="abc" />
@@ -20,9 +18,9 @@
 		<match name="Adult_Swim" expression="adultswim" />
 		<match name="Adult_Swim" expression="Adult_Swim" />
 		<match name="Adult_Swim" expression="adult swim" />
-		<match name="AFI" expression="afi" />
+		<match name="AFI" expression="^afi$" />
 		<match name="AFI" expression="american film institute" />
-		<match name="After_Dark" expression="after" />
+		<match name="After_Dark" expression="after dark" />
 		<match name="Alcon_Entertainment" expression="alcon" />
 		<match name="Alfred_Hitchcock_Productions" expression="hitchcock" />
 		<match name="Alliance_Atlantis" expression="alliance atlantis" />
@@ -34,12 +32,8 @@
 		<match name="American_Masters" expression="american masters" />
 		<match name="American_Zoetrope" expression="zoetrope" />
 		<match name="Anchor_Bay_Entertainment" expression="anchor bay" />
-		<match name="Animal_Planet" expression="animalplanet" />
-		<match name="Animal_Planet" expression="Animal_Planet" />
-		<match name="Animal_Planet" expression="animal planet" />
-		<match name="Antena-3" expression="Antena-3" />
+		<match name="Animal_Planet" expression="animal ?planet" />
 		<match name="Apatow_Productions" expression="apatow" />
-		<match name="apple" expression="apple" />
 		<match name="ard" expression="ard" />
 		<match name="ark" expression="ark" />
 		<match name="Arte" expression="arte" />
@@ -596,17 +590,13 @@
 		<match name="Zomba" expression="zomba" />
 	</Studio>
 	<VideoCodec>
-		<match name="divx" expression="div|dx50" />
-		<match name="divx" expression="msmpeg4v(1|2|3)" />
+		<match name="divx" expression="div|dx50|msmpeg4v(1|2|3)" />
 		<match name="mpeg4" expression="msmpeg4" />
-		<match name="h264" expression="avc1" />
-		<match name="h264" expression="(h|x)\.?264" />
+		<match name="h264" expression="(h|x)\.?264|avc1?" />
 		<match name="wmv" expression="wmv(?!3|hd)" />
-		<match name="wmvhd" expression="wmv(3|hd)" />
+		<match name="wmvhd" expression="wmv(3|hd)|wvc1" />
 		<match name="xvid" expression="xvid" />
-		<match name="mp4" expression="mpg?4" />
-		<match name="mkv" expression="matroska|mkv" />
-		<match name="flv" expression="flv|vp6" />
+		<match name="flv" expression="vp6" />
 		<match name="mpeg" expression="mpeg(?!\d)" />
 		<match name="mpeg2" expression="mpeg2(?!video)" />
 		<match name="dvd" expression="mpeg2video" />
